@@ -1,3 +1,12 @@
+# Dauntless Humans
+For the specific changes made for Dauntless Humans, for fresh install, copy .env.example_dauntless to .env and run gen_passwords.
+
+Run the docker compose with sudo and you're good!
+
+`cp .env.example_dauntless .env`
+`./gen_passwords.sh`
+`sudo docker-compose up -d`
+
 # Jitsi Meet on Docker
 
 ![](resources/jitsi-docker.png)

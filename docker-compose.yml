@@ -12,6 +12,8 @@ services:
             - ${CONFIG}/web:/config:Z
             - ${CONFIG}/web/crontabs:/var/spool/cron/crontabs:Z
             - ${CONFIG}/transcripts:/usr/share/jitsi-meet/transcripts:Z
+            - /home/ale/Alejandro/meet.dauntlesshumans.com/fullchain.pem:/config/keys/cert.crt
+            - /home/ale/Alejandro/meet.dauntlesshumans.com/privkey.pem:/config/keys/cert.key
         environment:
             - AMPLITUDE_ID
             - ANALYTICS_SCRIPT_URLS
